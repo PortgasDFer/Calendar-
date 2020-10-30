@@ -39,7 +39,7 @@
                         @if($medicamento->foto==null)
                         <img class="rounded-circle mx-auto d-block" src="/fotosmed/default.png" alt="Card image cap" style="width: 200px; height: 200px;">
                         @else
-                        <img class="rounded-circle mx-auto d-block" src="/fotosmed/{{$med->foto}}" alt="Card image cap" style="width: 200px; height: 200px;">
+                        <img class="rounded-circle mx-auto d-block" src="/fotosmed/{{$medicamento->foto}}" alt="Card image cap" style="width: 200px; height: 200px;">
                         @endif
                      <i>{{$medicamento->nombre_med}}</i></div>
                     <div class="card-body card-block">

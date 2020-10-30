@@ -91,7 +91,10 @@
 	            <div class="au-card-title" style="background-image:url('images/unnamed.jpg');">
 	                <div class="bg-overlay bg-overlay--blue"></div>
 	                <h3>
-	                    <i class="zmdi zmdi-account-calendar"></i>26 de junio 2020</h3>
+	                    <i class="zmdi zmdi-account-calendar"></i>
+	                    <?php $dt = new DateTime(); 
+						echo $dt->format('d-M-Y'); ?>
+	                </h3>
 	                <a href="/medicamentos/create">
 	                	<button class="au-btn-plus">
 	                    	<i class="zmdi zmdi-plus"></i>

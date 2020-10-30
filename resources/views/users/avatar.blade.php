@@ -1,0 +1,1 @@
+<img class="rounded-circle mx-auto d-block" src="avatars/{{$foto}}" alt="avatar" style="height: 60px; width: 60px;">

@@ -175,6 +175,10 @@
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
                                             <a href="#">
+                                                <i class="zmdi zmdi-pin"></i>Generar Historial <span class="badge badge-danger pull-right">En desarrollo</span></a>
+                                        </div>
+                                        <div class="account-dropdown__item">
+                                            <a href="#">
                                                 <i class="zmdi zmdi-pin"></i>Mi ubicación <span class="badge badge-danger pull-right">Proximamente...</span></a>
                                         </div>
                                         <div class="account-dropdown__item">

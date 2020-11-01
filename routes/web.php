@@ -42,3 +42,4 @@ route::resource('/rutinas','RutinasController');
 route::resource('/sintomas','SintomasController');
 route::resource('/medicamentos','MedicamentosController');
 route::get('/tablemedicamentos','MedicamentosController@datatable')->name('table.medicamentos');
+route::get('/generar-historial/{usuario}','PdfController@generar')->name('generar.pdf');

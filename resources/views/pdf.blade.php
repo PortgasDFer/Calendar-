@@ -75,24 +75,55 @@
            <table border="1" cellspacing="0" cellpadding="0">
               <thead>
                 <tr>
-                  <th class="total" width="180">Medicamento</th>
-                  <th class="total" width="50">Fecha</th>
-                  <th class="total" width="50" colspan="2">Cantidad</th>
-                  <th class="total" width="60" colspan="2">Hora</th>
+                  <th class="total" width="180">Sintoma</th>
+                  <th class="total" width="50">Ánimo</th>
+                  <th class="total" width="50" colspan="2">Temperatura</th>
+                  <th class="total" width="60" colspan="2">Hidratación</th>
                 </tr>
               </thead>
               <tbody>
-                @forelse($medicamentos as $med)
+                @forelse($sintomas as $s)
                   <tr>
-                    <td>{{$med->nombre_med}}</td>
-                    <td>{{$med->fecha}}</td>
-                    <td colspan="2">{{$med->cantidad_med}}</td>
-                    <td colspan="2">{{$med->intervalo}}</td>
+                    <td>{{$s->sintoma}} <br> {{$s->nota}}</td>
+                    <td>{{$s->animo}}</td>
+                    <td colspan="2">{{$s->temperatura}}</td>
+                    <td colspan="2">{{$s->hidratacion}}</td>
                   </tr>
                 @empty
                   <tr>
                     <td colspan="6">
-                      No ha consumido medicamentos
+                      No ha registrado sintomas
+                    </td>
+                  </tr>
+                @endforelse
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+        </div>
+      </div>
+      <div id="notices">
+        <div><h2>Rutinas</h2></div>
+        <div class="notice">
+           <table border="1" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th class="total" width="180">Rutina</th>
+                  <th class="total" width="50">Fecha</th>
+                  <th class="total" width="50" colspan="2">Tiempo</th>
+                </tr>
+              </thead>
+              <tbody>
+                @forelse($rutinas as $r)
+                  <tr>
+                    <td>{{$r->nombre}}</td>
+                    <td>{{$r->Fecha}}</td>
+                    <td colspan="2">{{$r->tiempo}}</td>
+                  </tr>
+                @empty
+                  <tr>
+                    <td colspan="4">
+                      No ha registrado rutinas
                     </td>
                   </tr>
                 @endforelse

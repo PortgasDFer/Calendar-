@@ -20,7 +20,10 @@ class PdfController extends Controller
                             ->where('d_u_m.id_user','=',$user->id)
                             ->get();
         $rutinas=Rutina::where('id_user','=',$user->id)->get();
-        $sintomas=Sintoma::where('id_user','=',$user->id)->get();
+        $sintomas=Sintoma::join('notas','sintomas.id_sintomas','=','notas.id_sintoma')
+                            ->select(array('sintomas.id_sintomas','sintomas.sintoma','notas.nota','sintomas.animo','sintomas.temperatura','sintomas.hidratacion'))
+                            ->where('sintomas.id_user','=',$user->id)
+                            ->get();
         $view =     \View::make('pdf', compact('user','medicamentos','rutinas','sintomas'))->render();
         $pdf =      \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);

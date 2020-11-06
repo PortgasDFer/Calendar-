@@ -47,6 +47,10 @@
                         <hr>
                         Teléfono: <i>{{$farmacia->telefono_far}}</i>
                         <hr>
+                        <a href="{{$farmacia->map_far}}" target="_blank">
+                            <button class="btn btn-info"><i aria-hidden="true"></i> Ver en Mapas</button>
+                        </a><br>
+                        <hr>
                         <a href="/farmacias">
                             <button class="btn btn-success"><i class="fa fa-arrow-left" aria-hidden="true"></i> Regresar</button>
                         </a>

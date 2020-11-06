@@ -25,6 +25,7 @@ return array(
     'CalendarPlus\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'CalendarPlus\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'CalendarPlus\\Http\\Controllers\\MedicamentosController' => $baseDir . '/app/Http/Controllers/MedicamentosController.php',
+    'CalendarPlus\\Http\\Controllers\\PdfController' => $baseDir . '/app/Http/Controllers/PdfController.php',
     'CalendarPlus\\Http\\Controllers\\PerfilController' => $baseDir . '/app/Http/Controllers/PerfilController.php',
     'CalendarPlus\\Http\\Controllers\\RolesController' => $baseDir . '/app/Http/Controllers/RolesController.php',
     'CalendarPlus\\Http\\Controllers\\RutinasController' => $baseDir . '/app/Http/Controllers/RutinasController.php',

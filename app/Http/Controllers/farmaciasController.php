@@ -71,6 +71,7 @@ class farmaciasController extends Controller
         $farmacia->cp=$request->input('cp');
         $farmacia->municipio=$request->input('municipio');
         $farmacia->telefono_far=$request->input('telefono');
+        $farmacia->map_far=$request->input('mapas');
         $farmacia->save();
 
         alert()->success('Calendar+', 'Farmacia registrada correctamente');
@@ -132,6 +133,7 @@ class farmaciasController extends Controller
         $farmacia->cp=$request->input('cp');
         $farmacia->municipio=$request->input('municipio');
         $farmacia->telefono_far=$request->input('telefono');
+        $farmacia->map_far=$request->input('mapas');
         $farmacia->save();
 
         alert()->success('Calendar+', 'Farmacia actualizada correctamente');

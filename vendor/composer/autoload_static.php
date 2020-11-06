@@ -464,6 +464,7 @@ class ComposerStaticInitfb990daab8a207f5351c8ba864a7546c
         'CalendarPlus\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'CalendarPlus\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'CalendarPlus\\Http\\Controllers\\MedicamentosController' => __DIR__ . '/../..' . '/app/Http/Controllers/MedicamentosController.php',
+        'CalendarPlus\\Http\\Controllers\\PdfController' => __DIR__ . '/../..' . '/app/Http/Controllers/PdfController.php',
         'CalendarPlus\\Http\\Controllers\\PerfilController' => __DIR__ . '/../..' . '/app/Http/Controllers/PerfilController.php',
         'CalendarPlus\\Http\\Controllers\\RolesController' => __DIR__ . '/../..' . '/app/Http/Controllers/RolesController.php',
         'CalendarPlus\\Http\\Controllers\\RutinasController' => __DIR__ . '/../..' . '/app/Http/Controllers/RutinasController.php',

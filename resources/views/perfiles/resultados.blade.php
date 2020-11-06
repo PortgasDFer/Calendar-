@@ -63,6 +63,9 @@
                     <p class="card-text">Calle <i>{{$f->calle}}</i> #{{$f->numero}}</p>
                     <p class="card-text">Ciudad: {{$f->ciudad}} / Municipio o delegación: {{$f->municipio}}</p>
                     <p class="card-text">Código Postal: {{$f->cp}} / Telefono: {{$f->telefono_far}}</p>
+                    <a href="{{$f->map_far}}" target="_blank">
+                        <button class="btn btn-info"><i aria-hidden="true"></i> Ver en Mapas</button>
+                    </a>
                 </div>
                 <div class="w-100"></div>
                 <div class="card-footer w-100  btn_2">

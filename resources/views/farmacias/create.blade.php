@@ -113,6 +113,15 @@
                                         <input type="text" id="ciudad" name="ciudad" placeholder="Nombre de la ciudad" class="form-control">
                                     </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <label for="">URL Maps</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        </div>
+                                        <input type="text" id="mapas" name="mapas" placeholder="Url de Maps Ej: https://goo.gl/maps/uLtBKQejAZPwN7iZ6" class="form-control">
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="">Telefono</label>
@@ -132,6 +141,7 @@
                                     <input type="file" id="imagen" name="imagen" class="form-control">
                                 </div>
                             </div>
+
                             <div class="form-actions form-group">
                                 <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-paper-plane"></i> Registrar</button>
                             </div>

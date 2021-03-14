@@ -18,9 +18,14 @@ use DataTables;
 
 class PerfilController extends Controller
 {
-    public function miPerfil($slug)
+    public function miPerfil(Request $request, $slug)
     {
-    	$user=User::where('slug','=',$slug)->firstOrFail();
+    	
+       $user=User::where('slug','=',$slug)->firstOrFail();
+       if($slug!=\Auth::user()->slug){
+            alert()->success('Calendar+', 'No vas a encontrar una vulnerabilidad Garrido');
+            $user=User::where('slug','=',\Auth::user()->slug)->firstOrFail();
+       }
         $medicamentos=D_U_M::where('id_user','=' ,$user->id)->count();
         $rutinas=Rutina::where('id_user','=',$user->id)->count();
         $sintomas=Sintoma::where('id_user','=',$user->id)->count();
@@ -29,6 +34,7 @@ class PerfilController extends Controller
                             ->select(array('medicamento.id_medicamento','medicamento.nombre_med','medicamento.cantidad_med','medicamento.fecha','medicamento.intervalo','medicamento.foto','users.slug'))
                             ->where('users.slug','=',$user->slug)
                             ->get();
+         alert()->success('Calendar+', 'Estas en tu perfil');
     	return view('perfiles.perfil',compact('user','rutinas','medicamentos','sintomas','medicinas'));
 
 
@@ -37,7 +43,10 @@ class PerfilController extends Controller
     public function miConfiguracion($slug)
     {
     	$user=User::where('slug','=',$slug)->firstOrFail();
-
+        if($slug!=\Auth::user()->slug){
+            alert()->success('Calendar+', 'No vas a encontrar una vulnerabilidad Garrido');
+            $user=User::where('slug','=',\Auth::user()->slug)->firstOrFail();
+       }
     	return view('perfiles.editardatos',compact('user'));
     }
 

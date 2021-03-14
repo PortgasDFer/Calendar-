@@ -175,7 +175,7 @@
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
                                             <a href="/generar-historial/{{Auth::user()->slug}}">
-                                                <i class="zmdi zmdi-pin"></i>Generar Historial <span class="badge badge-danger pull-right">En desarrollo</span></a>
+                                                <i class="zmdi zmdi-pin"></i>Generar Historial Medico PDF</a>
                                         </div>
                                         <div class="account-dropdown__item">
                                             <a href="#">

@@ -275,13 +275,13 @@ section {
 /*Page Objects*/
 .page-wrapper-out{
     overflow: hidden;
-    background: #99c2d6;
+    background: #1977cc;
     padding-bottom: 8vh;
 }
 @media (max-width: 991px) {
     .page-wrapper-out {
     overflow: auto;
-    background: #99c2d6;
+    background: #1977cc;
     padding-bottom: 12vh;
 }
 }
@@ -350,7 +350,7 @@ section {
 }
 
 .page-content--bg5d {
-    background: #99c2d6;
+    background: #1977cc;
     height: 100vh;
 }
 

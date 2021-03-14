@@ -40,6 +40,7 @@
                         <form action="/medicamentos" method="post" enctype="multipart/form-data" id="medicamento">
                             @csrf
                             <div class="form-group">
+                                <label for="">Nombre del medicamento</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -48,6 +49,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Dosis del medicamento</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -57,6 +59,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Fecha de inicio</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -65,6 +68,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Hora</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -73,6 +77,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Cantidad</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -81,6 +86,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Foto del medicamento</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>
@@ -89,6 +95,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="">Notas</label>
                                 <div class="input-group">
                                     <div class="input-group-addon">
                                         <i class="fa fa-user"></i>

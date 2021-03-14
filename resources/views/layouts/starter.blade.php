@@ -50,25 +50,32 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/acerca">Acerca de nosotros</a>
                                 </li>
-                            </ul>
-                        </div>
-                        @guest
-                            <a class="btn_2 d-none d-lg-block" href="{{ route('register') }}">Registrarse</a>
-                            &nbsp;
-                            <a class="btn_2 d-none d-lg-block" href="{{ route('login') }}">Iniciar sesión</a>
-                        @else
-                         <a href="{{ url('/home') }}" class="btn_2 d-none d-lg-block">Inicio</a>
-                         &nbsp;
-                         
-                        <a class="btn_2 d-none d-lg-block" href="{{ route('logout') }}"
+                                <li class="nav-item">
+                                    @guest
+                                        <a class="btn_2 d-none d-lg-block" href="{{ route('register') }}">Registrarse</a>
+                                        &nbsp;
+                                        <a class="btn_2 d-none d-lg-block" href="{{ route('login') }}">Iniciar sesión</a>
+                                    @else
+                                     <a href="{{ url('/home') }}" class="btn_2 d-none d-lg-block">Inicio</a>
+                                     &nbsp;
+                                 
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn_2 d-none d-lg-block" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Cerrar sesión') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                        @endguest
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                    @endguest
+                                </li>
+                               
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </div>

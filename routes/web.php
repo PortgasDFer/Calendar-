@@ -12,10 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('indexv2');
 });
 Route::get('/acerca', function(){
 	return view('acerca');
+});
+Route::get('/condiciones-de-uso', function(){
+	return view('condiciones');
+});
+Route::get('/politicas', function(){
+	return view('politicas');
 });
 
 Auth::routes(['verify' => true]);
